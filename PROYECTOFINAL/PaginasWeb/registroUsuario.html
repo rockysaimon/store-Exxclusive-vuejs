@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Exxclusive++</title>
+    <style>
+        body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.inicio-usuario{
+    display: flex;
+    justify-content: end;
+}
+.inicio-usuario li{
+    margin-right: 15px;
+}
+.inicio-usuario ul li a{
+    color:rgb(49, 41, 41);
+}
+.inicio-usuario ul li a:hover{
+    color: rgb(163, 163, 163);
+}
+.inicio-usuario li img{
+    height: 18px;
+    margin-right: 8px;
+}
+.imagen-logo{
+    display: flex;
+    justify-content: center;
+}
+.imagen-logo, img{
+    height: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+nav, li{
+    margin-right: 50px;
+}
+nav ul li a{
+    color: rgb(49, 41, 41);
+}
+a:hover{
+    color: rgb(163, 163, 163);
+}
+
+.banner{
+    margin-top: 20px;
+    background-image: url(../images/bannerdivexxclusive.webp);
+    height: 300px;
+    margin-bottom: 40px;
+}
+/* productos (sección a cambiar)*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(49, 41, 41);
+}
+section h1{
+    font-size: 50px;
+}
+.crear-cuenta{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.crear-cuenta input{
+    width: 100%;
+    margin-bottom: 17px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    height: 35px;
+}
+.crear-cuenta input:hover{
+    border: 1px solid black;
+}
+.crear-cuenta label{
+    font-size: 18px;
+}
+.crear-cuenta button{
+    margin: auto;
+    width: 50%;
+    color: white;
+    background-color: rgb(49, 41, 41);
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+.crear-cuenta button:hover{
+    background-color: rgb(163, 163, 163);
+}
+
+/* productos (sección a cambiar)*/
+footer{
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: space-around;
+}
+.footerdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerdiv ul{
+    flex-direction: column;
+}
+.footerdiv ul li{
+    margin-bottom:10px;
+}
+.footerdiv ul li a{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inicio-usuario">
+            <ul>
+                <li>
+                    <a href="registroUsuario.html" target="_blank">
+                        <img src="../images/iniciosesionlogo.png" alt="sesion">Registrar usuario
+                    </a>
+                </li>
+                <li>
+                    <a href="favoritos.html" target="_blank">
+                        <img src="../images/favoritoslogo.png" alt="favoritos">Favoritos
+                    </a>
+                </li>
+                <li>
+                    <a href="carrito.html" target="_blank">
+                        <img src="../images/carritodecompraslogo.png" alt="compras">Carrito de compras
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="imagen-logo">
+            <a href="home.html">
+                <img src="../images/exclusivelogo.jpg" alt="logoExxclusive++">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="camisetas.html" target="_blank">Camisetas </a></li>
+                <li><a href="hoodies.html" target="_blank">Hoodies </a></li>
+                <li><a href="pantalones.html" target="_blank">Pantalones </a></li>
+                <li><a href="accesorios.html" target="_blank">Accesorios </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner"></div>
+    <section>
+        <h1>Crear Cuenta</h1>
+        <form class="crear-cuenta" action="home.html" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="Correo" required>
+            <label for="passsword">Contraseña</label>
+            <input type="password" id="passsword" placeholder="Contraseña" required>
+            <button type="submit">Crear</button>
+
+        </form>
+    </section>
+    <footer>
+        <div class="footerdiv">
+            <h4>Colecciones</h4>
+            <ul>
+                <li><a href="camisetas.html" target="_blank">Camisetas </a></li>
+                <li><a href="hoodies.html" target="_blank">Hoodies </a></li>
+                <li><a href="pantalones.html" target="_blank">Pantalones </a></li>
+                <li><a href="accesorios.html" target="_blank">Accesorios </a></li>
+            </ul>
+        </div>
+        <div class="footerdiv">
+            <h4>Información</h4>
+            <ul>
+                <li><a href="contacto.html" target="_blank">Contacto </a></li>
+                <li><a href="acercade.html" target="_blank">Acerca de nosotros </a></li>
+            </ul>
+        </div>
+        <div class="footerdiv">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="preguntas.html" target="_blank">Preguntas frecuentes </a></li>
+                <li><a href="políticas.html" target="_blank">Políticas </a></li>
+            </ul>
+        </div>
+        <div class="footerdiv">
+            <h4>Noticias</h4>
+            <ul>
+                <li><a href="blog.html" target="_blank">Blog </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
